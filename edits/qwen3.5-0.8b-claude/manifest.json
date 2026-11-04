@@ -1,0 +1,20 @@
+{
+ "model": "qwen3.5-0.8b",
+ "layers": "10,14",
+ "alpha": 1.0,
+ "columns": 64,
+ "tensors": [
+  {
+   "tensor": "model.layers.10.mlp.down_proj.weight",
+   "columns": 64,
+   "weights_changed": 64188
+  },
+  {
+   "tensor": "model.layers.14.mlp.down_proj.weight",
+   "columns": 64,
+   "weights_changed": 64317
+  }
+ ],
+ "weights_changed": 128505,
+ "share_of_model": "0.0171%"
+}

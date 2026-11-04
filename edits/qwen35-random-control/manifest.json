@@ -1,0 +1,25 @@
+{
+ "model": "qwen3.5-0.8b",
+ "control_for": "edits/qwen35-paper",
+ "seed": 0,
+ "method": "random unit direction orthogonal to the paper's repetition directions, paper formula on the same 64 columns per layer, Frobenius norm matched per layer",
+ "tensors": [
+  {
+   "tensor": "model.language_model.layers.15.mlp.down_proj.weight",
+   "columns": 64,
+   "weights_changed": 64458,
+   "frobenius_paper": 1.7489,
+   "frobenius_control": 1.7489,
+   "max_cos_to_repetition_dirs": 0.0
+  },
+  {
+   "tensor": "model.language_model.layers.19.mlp.down_proj.weight",
+   "columns": 64,
+   "weights_changed": 64860,
+   "frobenius_paper": 1.3988,
+   "frobenius_control": 1.3988,
+   "max_cos_to_repetition_dirs": 0.0
+  }
+ ],
+ "weights_changed": 129318
+}
