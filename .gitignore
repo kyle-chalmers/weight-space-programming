@@ -1,0 +1,11 @@
+.env
+.internal/
+.venv/
+models/
+vendor/
+probes/
+edits/_npy_*/
+edits/**/*.safetensors
+__pycache__/
+.DS_Store
+*.safetensors
