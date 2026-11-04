@@ -1,0 +1,35 @@
+{
+ "model": "qwen3.5-0.8b",
+ "layers": "10,11,12,13,14",
+ "alpha": 1.0,
+ "columns": 0,
+ "tensors": [
+  {
+   "tensor": "model.layers.10.mlp.down_proj.weight",
+   "columns": 3584,
+   "weights_changed": 3144857
+  },
+  {
+   "tensor": "model.layers.11.mlp.down_proj.weight",
+   "columns": 3584,
+   "weights_changed": 3155466
+  },
+  {
+   "tensor": "model.layers.12.mlp.down_proj.weight",
+   "columns": 3584,
+   "weights_changed": 3158679
+  },
+  {
+   "tensor": "model.layers.13.mlp.down_proj.weight",
+   "columns": 3584,
+   "weights_changed": 3171786
+  },
+  {
+   "tensor": "model.layers.14.mlp.down_proj.weight",
+   "columns": 3584,
+   "weights_changed": 3125948
+  }
+ ],
+ "weights_changed": 15756736,
+ "share_of_model": "2.0942%"
+}

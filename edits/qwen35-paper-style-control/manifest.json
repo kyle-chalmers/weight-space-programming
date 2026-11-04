@@ -1,0 +1,29 @@
+{
+ "model": "qwen3.5-0.8b",
+ "control_for": "edits/qwen35-paper",
+ "seed": 492698,
+ "method": "random unit direction orthogonal to the paper's repetition directions, paper formula on every column, norm matched per layer to the repetition edit at strength 4 on every column",
+ "tensors": [
+  {
+   "tensor": "model.language_model.layers.15.mlp.down_proj.weight",
+   "columns": 3584,
+   "weights_changed": 3492095,
+   "frobenius_paper": 1.7489,
+   "frobenius_control": 2.3206,
+   "alpha": 4.45572,
+   "relative_change": 0.14113,
+   "max_cos_to_repetition_dirs": 0.0
+  },
+  {
+   "tensor": "model.language_model.layers.19.mlp.down_proj.weight",
+   "columns": 3584,
+   "weights_changed": 3483282,
+   "frobenius_paper": 1.3988,
+   "frobenius_control": 2.3305,
+   "alpha": 4.28376,
+   "relative_change": 0.13506,
+   "max_cos_to_repetition_dirs": 0.0
+  }
+ ],
+ "weights_changed": 6975377
+}
