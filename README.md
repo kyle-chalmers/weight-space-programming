@@ -26,9 +26,12 @@ presence penalty 1.5), 16,384-token cap.
 |---|---|---|---|
 | Base (50 problems x 3 sampling seeds) | 0 | 17.3% | 87% |
 | Paper's edit (same 150 answers) | 130,188 | 63.3% | 8% |
-| Random direction, same 64 neurons per layer, same size (seed 0) | 129,318 | 34% | 60% |
+| Random direction, same 64 neurons per layer, same size (same 150 answers) | 129,318 | 26.7% | 73% |
+| Random direction across every neuron, the paper's control (seed 0 only, base 14% / 90%) | 6,975,377 | 20% | 78% |
 
-The paper reported 10.6% to 60.4%. Against base on the same seeds, the edit fixed 70 answers and broke 1.
+The paper reported 10.6% to 60.4%. Against base on the same seeds, the edit fixed 70 answers and broke 1. Against the
+64-neuron random control, it fixed 57 and broke 2. So most of the gain needs the paper's direction: a random change on
+the same neurons recovers about a fifth of it, and one spread over every neuron does about nothing, as the paper found.
 
 ## What Claude reads vs what code does
 
